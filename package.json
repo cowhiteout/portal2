@@ -1,0 +1,62 @@
+{
+  "": "TODO: replace 'repo-name' below",
+  "name": "repo-name",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@atlas-ui/errorboundary": "^0.1.55",
+    "@atlas-ui/ga": "^0.1.4",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "@fontsource/roboto": "^4.1.0",
+    "@material-ui/core": "^5.0.0-alpha.24",
+    "@material-ui/data-grid": "^4.0.0-alpha.18",
+    "@material-ui/icons": "5.0.0-alpha.24",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "axios": "^0.19.2",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "query-string": "^6.13.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "preinstall": "read -n 1 -s -r -p \"Make sure you are connected to the EmployBridge VPN, then press any key to continue.\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
+    "coverage": "npm test -- --coverage --watch-all --env=jest-environment-jsdom-sixteen",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "serviceWorker.js",
+      "setupRepo.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prompts": "^2.4.0",
+    "replace-in-file": "^6.1.0"
+  }
+}
